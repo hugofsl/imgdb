@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste Repositório Juggler</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Upload de Imagem</h1>
+    <form id="uploadForm">
+      <input type="file" id="image" name="image" multiple required>
+      <textarea id="metadata" name="metadata" placeholder="Adicione metadados JSON (opcional)"></textarea>
+      <select id="collectionSelect" name="collectionId">
+        <option value="">Selecione uma coleção (opcional)</option>
+      </select>
+      <button type="submit">Fazer Upload</button>
+    </form>
+
+    <h2>Coleções</h2>
+    <button id="newCollectionBtn">Nova Coleção</button>
+    <ul id="collectionList"></ul>
+
+    <h2>Imagens Carregadas</h2>
+    <button id="deleteSelectedBtn" onclick="deleteSelectedImages()">Excluir Selecionadas</button>
+    <button id="downloadSelectedBtn" onclick="downloadSelectedImages()">Baixar Selecionadas</button>
+    <ul id="imageList"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

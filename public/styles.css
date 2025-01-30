@@ -1,0 +1,219 @@
+/* CSS Variables */
+:root {
+  --font-family: Arial, sans-serif;
+  --background-color: #f4f4f9;
+  --container-background-color: #fff;
+  --container-shadow: rgba(0, 0, 0, 0.1);
+  --text-color: #333;
+  --button-background-color: #4CAF50;
+  --button-hover-background-color: #45a049;
+  --edit-button-background-color: #ff9800;
+  --edit-button-hover-background-color: #e68900;
+  --delete-button-background-color: #f44336;
+  --delete-button-hover-background-color: #d32f2f;
+  --download-button-background-color: #2196F3;
+  --download-button-hover-background-color: #0b7dda;
+  --metadata-font-size: 70%;
+  --selected-collection-background-color: #d3d3d3;
+}
+
+/* Estilização geral */
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden; /* Prevent body overflow */
+}
+
+/* Container principal */
+.container {
+  background-color: var(--container-background-color);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px var(--container-shadow);
+  min-width: 300px;
+  max-width: 70vw;
+  text-align: center;
+  overflow: hidden; /* Prevent overflow */
+  max-height: 100vh; /* Ensure container does not exceed viewport height */
+  overflow-y: auto; /* Add vertical scroll if content exceeds container height */
+}
+
+/* Títulos */
+h1, h2 {
+  text-align: center;
+  color: var(--text-color);
+}
+
+/* Input de arquivo */
+input[type="file"] {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+}
+
+/* Área de texto para metadados */
+textarea {
+  width: 100%;
+  height: 80px;
+  margin: 10px 0;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+/* Botões */
+button {
+  padding: 5px 10px;
+  background-color: var(--button-background-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: var(--button-hover-background-color);
+}
+
+/* Lista de imagens */
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Ensure max 3 columns */
+  gap: 10px;
+}
+
+/* Lista de imagens carregadas */
+#imageList {
+  overflow-y: auto; /* Add vertical scroll if content exceeds container height */
+}
+
+/* Lista de coleções */
+#collectionList {
+  margin-bottom: 10px; /* Add some space below the collection list */
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  background: var(--container-background-color);
+  border-radius: 6px;
+  box-shadow: 0 0 10px var(--container-shadow);
+  text-align: left;
+  word-wrap: break-word;
+  overflow: hidden; /* Prevent overflow */
+  max-width: 100%; /* Ensure content is restrained to the image div */
+}
+
+/* Links das imagens */
+li a {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+/* Imagem em miniatura */
+li img {
+  max-width: 100%;
+  max-height: 100px;
+  border-radius: 4px;
+}
+
+/* Botões de ação */
+.action-buttons {
+  display: flex;
+  flex-direction: column; /* Display buttons vertically */
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.edit-btn {
+  background-color: var(--edit-button-background-color);
+}
+
+.edit-btn:hover {
+  background-color: var(--edit-button-hover-background-color);
+}
+
+/* Botão de excluir imagem */
+.delete-btn {
+  background-color: var(--delete-button-background-color);
+}
+
+.delete-btn:hover {
+  background-color: var(--delete-button-hover-background-color);
+}
+
+.download-btn {
+  background-color: var(--download-button-background-color);
+}
+
+.download-btn:hover {
+  background-color: var(--download-button-hover-background-color);
+}
+
+/* Formulário de edição de metadados */
+.edit-form {
+  display: none;
+  margin-top: 10px;
+  width: 100%; /* Ensure form fits within the image div */
+}
+
+.edit-form textarea {
+  width: 100%;
+  height: 60px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.save-btn {
+  background-color: var(--download-button-background-color);
+}
+
+.save-btn:hover {
+  background-color: var(--download-button-hover-background-color);
+}
+
+.cancel-btn {
+  background-color: var(--delete-button-background-color);
+}
+
+.cancel-btn:hover {
+  background-color: var(--delete-button-hover-background-color);
+}
+
+.show-metadata-btn {
+  background-color: var(--button-background-color);
+}
+
+.show-metadata-btn:hover {
+  background-color: var(--button-hover-background-color);
+}
+
+/* Metadata text */
+.metadata {
+  font-size: var(--metadata-font-size); /* 30% smaller */
+}
+
+/* Selected collection */
+.selected-collection {
+  background-color: var(--selected-collection-background-color);
+}
