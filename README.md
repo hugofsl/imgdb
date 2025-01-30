@@ -1,4 +1,6 @@
-# Prisma Postgres Example: Queries, Real-Time Events & Caching
+
+
+<!--    # Prisma Postgres Example: Queries, Real-Time Events & Caching
 
 This project contains a sample application demonstrating various capabilities and workflows of [Prisma Postgres](https://prisma.io/data-platform/postgres):
 
@@ -36,7 +38,7 @@ npx try-prisma@latest \
   --install npm
 ```
 
-<!-- For reference, this is what the command looks like (note that the `__YOUR_DATABASE_CONNECTION_STRING__` placeholder must be replaced with _your_ actual database connection string):
+ For reference, this is what the command looks like (note that the `__YOUR_DATABASE_CONNECTION_STRING__` placeholder must be replaced with _your_ actual database connection string):
 
 ```
 npx try-prisma@latest
@@ -47,7 +49,7 @@ npx try-prisma@latest
 ```
 
 Your connection string that should replace the `__YOUR_DATABASE_CONNECTION_STRING__` placeholder looks similar to this: `prisma+postgres://accelerate.prisma-data.net/?api_key=ey...`
--->
+
 
 Navigate into the project directory and (if you haven't done so via the CLI wizard) install dependencies:
 
@@ -157,4 +159,4 @@ Received an event: {
 - Check out the [Prisma docs](https://www.prisma.io/docs)
 - Share your feedback on the [Prisma Discord](https://pris.ly/discord/)
 - Create issues and ask questions on [GitHub](https://github.com/prisma/prisma/)
-
+-->
