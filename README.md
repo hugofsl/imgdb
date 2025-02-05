@@ -13,6 +13,39 @@ This application allows users to upload, manage, and download images with metada
 
 > **Note**: In this development context, AWS was used for both the database and the bucket.
 
+### Backend
+
+The backend of this application is built using Node.js and Express. It handles the following tasks:
+- Image upload and storage in AWS S3.
+- Metadata extraction using `node-exiftool`.
+- Database operations using Prisma ORM with a PostgreSQL database.
+- Image deletion from both S3 and the database.
+- Synchronization of the database with the S3 bucket.
+- Providing APIs for the frontend to interact with.
+
+Technologies used:
+- Node.js
+- Express
+- Prisma ORM
+- PostgreSQL
+- AWS S3
+- `node-exiftool`
+- `sharp`
+
+### Frontend
+
+The frontend of this application is built using HTML, CSS, and JavaScript. It provides a user interface for:
+- Uploading images.
+- Viewing and managing image metadata.
+- Creating and managing image collections.
+- Downloading images with embedded metadata.
+- Deleting images.
+
+Technologies used:
+- HTML
+- CSS
+- JavaScript
+
 ## Português (Brazilian Portuguese)
 
 Este aplicativo permite que os usuários façam upload, gerenciem e baixem imagens com metadados. As principais funcionalidades incluem:
@@ -25,3 +58,36 @@ Este aplicativo permite que os usuários façam upload, gerenciem e baixem image
 - **Sincronização**: O aplicativo pode sincronizar o banco de dados com o bucket na nuvem para remover registros de imagens que não existem mais no bucket.
 
 > **Nota**: Neste contexto de desenvolvimento, foi utilizado o AWS tanto para o banco de dados quanto para o bucket.
+
+### Backend
+
+O backend deste aplicativo é construído usando Node.js e Express. Ele lida com as seguintes tarefas:
+- Upload de imagens e armazenamento no AWS S3.
+- Extração de metadados usando `node-exiftool`.
+- Operações de banco de dados usando Prisma ORM com um banco de dados PostgreSQL.
+- Exclusão de imagens tanto do S3 quanto do banco de dados.
+- Sincronização do banco de dados com o bucket S3.
+- Fornecimento de APIs para interação com o frontend.
+
+Tecnologias usadas:
+- Node.js
+- Express
+- Prisma ORM
+- PostgreSQL
+- AWS S3
+- `node-exiftool`
+- `sharp`
+
+### Frontend
+
+O frontend deste aplicativo é construído usando HTML, CSS e JavaScript. Ele fornece uma interface de usuário para:
+- Upload de imagens.
+- Visualização e gerenciamento de metadados de imagens.
+- Criação e gerenciamento de coleções de imagens.
+- Download de imagens com metadados embutidos.
+- Exclusão de imagens.
+
+Tecnologias usadas:
+- HTML
+- CSS
+- JavaScript
