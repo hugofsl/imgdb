@@ -46,6 +46,53 @@ Technologies used:
 - CSS
 - JavaScript
 
+### How to Start
+
+1. **Clone the repository**:
+    ```sh
+    git clone <repository-url>
+    cd imgdb
+    ```
+
+2. **Install dependencies**:
+    ```sh
+    npm install
+    ```
+
+3. **Set up environment variables**:
+    Create a `.env` file in the root directory and add the following variables:
+    ```plaintext
+    DATABASE_URL=postgresql://<username>:<password>@<host>:<port>/<database>
+    AWS_S3_ENDPOINT=https://s3.amazonaws.com
+    AWS_REGION=<your-aws-region>
+    AWS_ACCESS_KEY_ID=<your-access-key-id>
+    AWS_SECRET_ACCESS_KEY=<your-secret-access-key>
+    AWS_S3_BUCKET_NAME=<your-s3-bucket-name>
+    PORT=3000
+    ```
+
+4. **Run database migrations**:
+    ```sh
+    npx prisma migrate dev
+    ```
+
+5. **Start the server**:
+    ```sh
+    npm start
+    ```
+
+6. **Open the application**:
+    Open your browser and navigate to `http://localhost:3000`.
+
+### Application Demo
+
+Here is a video showing the application running:
+
+<video width="600" controls>
+  <source src="./hugolourenco_imgdb_test.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ## Português (Brazilian Portuguese)
 
 Este aplicativo permite que os usuários façam upload, gerenciem e baixem imagens com metadados. As principais funcionalidades incluem:
@@ -91,3 +138,50 @@ Tecnologias usadas:
 - HTML
 - CSS
 - JavaScript
+
+### Como Iniciar
+
+1. **Clone o repositório**:
+    ```sh
+    git clone <repository-url>
+    cd imgdb
+    ```
+
+2. **Instale as dependências**:
+    ```sh
+    npm install
+    ```
+
+3. **Configure as variáveis de ambiente**:
+    Crie um arquivo `.env` no diretório raiz e adicione as seguintes variáveis:
+    ```plaintext
+    DATABASE_URL=postgresql://<username>:<password>@<host>:<port>/<database>
+    AWS_S3_ENDPOINT=https://s3.amazonaws.com
+    AWS_REGION=<your-aws-region>
+    AWS_ACCESS_KEY_ID=<your-access-key-id>
+    AWS_SECRET_ACCESS_KEY=<your-secret-access-key>
+    AWS_S3_BUCKET_NAME=<your-s3-bucket-name>
+    PORT=3000
+    ```
+
+4. **Execute as migrações do banco de dados**:
+    ```sh
+    npx prisma migrate dev
+    ```
+
+5. **Inicie o servidor**:
+    ```sh
+    npm start
+    ```
+
+6. **Abra o aplicativo**:
+    Abra seu navegador e navegue para `http://localhost:3000`.
+
+### Demonstração do Aplicativo
+
+Aqui está um vídeo mostrando o aplicativo em execução:
+
+<video width="600" controls>
+  <source src="./hugolourenco_imgdb_test.mp4" type="video/mp4">
+  Seu navegador não suporta a tag de vídeo.
+</video>
