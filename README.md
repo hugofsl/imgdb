@@ -88,10 +88,7 @@ Technologies used:
 
 Here is a video showing the application running:
 
-<video width="600" controls>
-  <source src="./hugolourenco_imgdb_test.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[![hugolourenco_imgdb_test](https://img.youtube.com/vi/S5hr2oR22H8/0.jpg)](https://www.youtube.com/watch?v=S5hr2oR22H8)
 
 ## Português (Brazilian Portuguese)
 
@@ -181,7 +178,4 @@ Tecnologias usadas:
 
 Aqui está um vídeo mostrando o aplicativo em execução:
 
-<video width="600" controls>
-  <source src="./hugolourenco_imgdb_test.mp4" type="video/mp4">
-  Seu navegador não suporta a tag de vídeo.
-</video>
+[![hugolourenco_imgdb_test](https://img.youtube.com/vi/S5hr2oR22H8/0.jpg)](https://www.youtube.com/watch?v=S5hr2oR22H8)
